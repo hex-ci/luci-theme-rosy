@@ -522,6 +522,7 @@ table > tbody > tr > td, table > tbody > tr > th, table > tfoot > tr > td, table
     padding: .5rem;
     border-top: 1px solid #ddd;
     /*white-space: nowrap;*/
+    word-break: break-all;
 }
 
 .cbi-section-table-cell {
@@ -851,6 +852,10 @@ td > table > tbody > tr > td,
 .cbi-value-description {
     display: table-cell;
     line-height: 1.25;
+}
+
+td.cbi-value-field {
+    word-break: break-all;
 }
 
 .cbi-value-helpicon > img {
@@ -1803,7 +1808,7 @@ header > .container > .pull-right > * {
 
 .logged-in .main-left .nav-container .navbar-container {
     position: absolute;
-	overflow: hidden;
+	overflow-y: auto;
 	bottom: 10px;
 	top: 82px;
 	width: 100%;
@@ -2190,7 +2195,7 @@ body.lang_pl.login .cbi-value-title {
     }
 
     .logged-in .main-left .nav-container .navbar-container {
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 }
 
@@ -2363,4 +2368,12 @@ body.lang_pl.login .cbi-value-title {
 
 .cbi-tab-descr {
     padding: 20px;
+}
+
+.cbi-section-node {
+    overflow-x: auto;
+}
+
+.cbi-section {
+    overflow-x: auto;
 }
