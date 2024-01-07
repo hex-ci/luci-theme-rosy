@@ -521,13 +521,18 @@ table > tbody > tr > td, table > tbody > tr > th, table > tfoot > tr > td, table
 .table > .tbody > .tr > .td, .table > .tbody > .tr > .th, .table > .tfoot > .tr > .td, .table > .tfoot > .tr > .th, .table > .thead > .tr > .td, .table > .thead > .tr > .th {
     padding: .5rem;
     border-top: 1px solid #ddd;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 }
 
 .cbi-section-table-cell {
+    text-align: center;
     white-space: nowrap;
     align-self: flex-end;
     flex: 1 1 auto;
+}
+
+th.cbi-section-table-cell {
+    white-space: nowrap;
 }
 
 .cbi-section-table-row {
@@ -686,6 +691,10 @@ td > table > tbody > tr > td,
 .cbi-button-negative.important {
     color: #fff;
     background-color: #d9534f;
+}
+
+.cbi-button-reset {
+    display: none;
 }
 
 .cbi-button-find,
@@ -1259,6 +1268,7 @@ td > .ifacebadge,
     margin-bottom: 20px;
     background-color: #FFF;
     border: none;
+    overflow-y: hidden;
 }
 
 /* change */
@@ -2087,7 +2097,7 @@ body.lang_pl.login .cbi-value-title {
     }
 
     .cbi-section-table-row {
-        display: flex;
+        /* display: flex; */
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
@@ -2096,7 +2106,7 @@ body.lang_pl.login .cbi-value-title {
     .td.cbi-value-field,
     .cbi-section-table-cell {
         text-align: center;
-        display: inline-block;
+        /* display: inline-block; */
         flex: 10 10 auto;
     }
 
@@ -2349,4 +2359,8 @@ body.lang_pl.login .cbi-value-title {
     .hide-xs {
         display: none;
     }
+}
+
+.cbi-tab-descr {
+    padding: 20px;
 }
