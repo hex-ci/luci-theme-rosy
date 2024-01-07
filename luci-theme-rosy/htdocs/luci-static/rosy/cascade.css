@@ -1815,6 +1815,31 @@ header > .container > .pull-right > * {
 	height: calc(100% - 92px);
 }
 
+/* The scroll bar of the navigation bar is compatible with each browser. */
+/* Google */
+.main-left .navbar-container::-webkit-scrollbar {
+	width: 6px;
+	background: transparent;
+}
+
+.main-left .navbar-container::-webkit-scrollbar-button {
+	display: none;
+}
+
+.main-left .navbar-container::-webkit-scrollbar-thumb {
+	background-color: #ffffff61;
+	border-radius: 10px;
+}
+
+.main-left .navbar-container::-webkit-scrollbar-thumb {
+	background-color: #839dd67a;
+	border-radius: 10px;
+}
+
+.main-left .navbar-container:hover::-webkit-scrollbar-thumb {
+	background-color: #839dd67a;
+}
+
 .logged-in .main-right {
         padding: 4rem 1rem 0;
     width: calc(85% - 20px);
@@ -2148,31 +2173,6 @@ body.lang_pl.login .cbi-value-title {
     .hide-xs {
         display: none;
     }
-    
-    /* The scroll bar of the navigation bar is compatible with each browser. */
-	/* Google */
-	.main-left .navbar-container::-webkit-scrollbar {
-		width: 6px;
-		background: transparent;
-	}
-
-	.main-left .navbar-container::-webkit-scrollbar-button {
-		display: none;
-	}
-
-	.main-left .navbar-container::-webkit-scrollbar-thumb {
-		background-color: #ffffff61;
-		border-radius: 10px;
-	}
-
-	.main-left .navbar-container::-webkit-scrollbar-thumb {
-		background-color: #839dd67a;
-		border-radius: 10px;
-	}
-
-	.main-left .navbar-container:hover::-webkit-scrollbar-thumb {
-		background-color: #839dd67a;
-	}
 
 	/* IE */
 	.main-left .navbar-container {
