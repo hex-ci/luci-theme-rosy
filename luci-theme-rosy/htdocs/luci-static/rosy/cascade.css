@@ -694,7 +694,7 @@ td > table > tbody > tr > td,
     background-color: #d9534f;
 }
 
-.cbi-button-reset {
+.node-main-login .cbi-button-reset {
     display: none;
 }
 
@@ -2376,4 +2376,12 @@ body.lang_pl.login .cbi-value-title {
 
 .cbi-section {
     overflow-x: auto;
+}
+
+.node-network-network .cbi-section-table {
+    margin: -10px !important;
+}
+
+.node-network-network table > tbody > tr > td {
+    white-space: nowrap;
 }
