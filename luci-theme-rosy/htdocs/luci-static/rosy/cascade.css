@@ -2385,3 +2385,8 @@ body.lang_pl.login .cbi-value-title {
 .node-network-network table > tbody > tr > td {
     white-space: nowrap;
 }
+
+.node-status-overview #wan4_i small,
+.node-status-overview #wan6_i small {
+    white-space: nowrap;
+}
